@@ -1,7 +1,7 @@
-var React = require("react");
-var ProfilePic = require("./user_profile_components/profile_pic");
-var ProfileName = require("./user_profile_components/profile_name");
-var ProfileLink = require("./user_profile_components/profile_link");
+import React from "react";
+import ProfilePic from "./user_profile_components/profile_pic";
+import ProfileName from "./user_profile_components/profile_name";
+import ProfileLink from "./user_profile_components/profile_link";
 
 class Profile extends React.Component {
     render() {
@@ -15,4 +15,4 @@ class Profile extends React.Component {
     }
 }
 
-module.exports = Profile;
+export default Profile;

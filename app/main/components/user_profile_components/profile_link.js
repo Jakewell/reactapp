@@ -1,4 +1,4 @@
-var React = require("react");
+import React from "react";
 
 class ProfileLink extends React.Component {
     render() {
@@ -10,4 +10,4 @@ class ProfileLink extends React.Component {
     }
 }
 
-module.exports = ProfileLink;
+export default ProfileLink;

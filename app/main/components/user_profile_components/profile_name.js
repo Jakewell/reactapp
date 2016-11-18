@@ -1,4 +1,4 @@
-var React = require("react");
+import React from "react";
 
 class ProfileName extends React.Component {
     render() {
@@ -6,4 +6,4 @@ class ProfileName extends React.Component {
     }
 }
 
-module.exports = ProfileName;
+export default ProfileName;

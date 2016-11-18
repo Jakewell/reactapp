@@ -1,6 +1,6 @@
-var React = require("react");
+import React from "react";
+import UserProfile from "./components/user_profile";
 
-var UserProfile = require("./components/user_profile");
 var USER_DATA = {
     name: "Jarkko Saikkonen",
     username: "Jakewell",
@@ -15,4 +15,4 @@ class MainApplication extends React.Component {
     }
 }
 
-module.exports = MainApplication;
+export default MainApplication;

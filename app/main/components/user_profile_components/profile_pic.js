@@ -1,4 +1,4 @@
-var React = require("react");
+import React from "react";
 
 class ProfilePic extends React.Component {
     render() {
@@ -6,4 +6,4 @@ class ProfilePic extends React.Component {
     }
 }
 
-module.exports = ProfilePic;
+export default ProfilePic;
