@@ -1,5 +1,6 @@
 import React from "react";
 import UserProfile from "./components/user_profile";
+import TopBarNavigation from "./components/navbar";
 
 var USER_DATA = {
     name: "Jarkko Saikkonen",
@@ -10,7 +11,10 @@ var USER_DATA = {
 class MainApplication extends React.Component {
     render() {
         return (
-            <UserProfile user={USER_DATA} />
+            <div>
+                <TopBarNavigation />
+                <UserProfile user={USER_DATA} />
+            </div>
         );
     }
 }
