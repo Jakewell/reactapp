@@ -3,7 +3,7 @@ import ProfilePic from "./user_profile_components/profile_pic";
 import ProfileName from "./user_profile_components/profile_name";
 import ProfileLink from "./user_profile_components/profile_link";
 
-class Profile extends React.Component {
+class UserProfile extends React.Component {
     render() {
         return (
             <div>
@@ -15,4 +15,4 @@ class Profile extends React.Component {
     }
 }
 
-export default Profile;
+export default UserProfile;

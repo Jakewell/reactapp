@@ -4,6 +4,8 @@ var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
     filename: 'index.html',
     inject: 'body'
 });
+var StyleLoader = require('style-loader');
+var CSSLoader = require('css-loader');
 
 module.exports = {
     entry: __dirname + '/app/index.js',
@@ -14,6 +16,12 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader'
+            },
+            
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
             }
         ]
     },
