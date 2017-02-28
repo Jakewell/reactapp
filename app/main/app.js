@@ -1,13 +1,7 @@
 import React from "react";
-import UserProfile from "./components/user_profile";
-import TopBarNavigation from "./components/navbar";
-import MainSection from "./components/main_section";
-
-var USER_DATA = {
-    name: "Jarkko Saikkonen",
-    username: "Jakewell",
-    image: "http://lorempixel.com/200/200/city"
-}
+import TopBarNavigation from "./components/navbar_components/navbar";
+import MainSection from "./components/main_section_components/main_section";
+import "./favicon.ico";
 
 class MainApplication extends React.Component {
     render() {
@@ -15,7 +9,6 @@ class MainApplication extends React.Component {
             <div>
                 <TopBarNavigation />
                 <MainSection />
-                <UserProfile user={USER_DATA} />
             </div>
         );
     }

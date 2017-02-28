@@ -4,8 +4,11 @@ var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
     filename: 'index.html',
     inject: 'body'
 });
+
 var StyleLoader = require('style-loader');
 var CSSLoader = require('css-loader');
+var FileLoader = require('file-loader');
+var URLLoader = require('url-loader');
 
 module.exports = {
     entry: __dirname + '/app/index.js',
@@ -22,6 +25,12 @@ module.exports = {
                 test: /\.css$/,
                 exclude: /node_modules/,
                 loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+            },
+            
+            {
+                test: /\.(png|jpg|ico)$/,
+                exclude: /node_modules/,
+                loader: 'url-loader?limit=10000&name=[path][name].[ext]'
             }
         ]
     },

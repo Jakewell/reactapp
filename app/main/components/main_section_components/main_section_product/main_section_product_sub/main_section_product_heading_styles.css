@@ -1,0 +1,8 @@
+.productHeading {
+    font-family: "Roboto", sans-serif;
+    font-size: 4em;
+    letter-spacing: 5px;
+    margin: 0;
+    vertical-align: middle;
+    display: inline-block;
+}
